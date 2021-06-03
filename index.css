@@ -1,4 +1,9 @@
-li {
+h1 {
+    padding: 15px;
     color: #000000;
-    background-color: #99cc00;
+    background-color: #ffd000;
+}
+
+h2 {
+    border-bottom: solid #3f9c00;
 }
