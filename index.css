@@ -1,9 +1,80 @@
+body {
+    margin: 0px;
+}
+
 h1 {
-    padding: 15px;
-    color: #050783;
-    background-color: #ffd000;
+    font-size: 40px;
+    color: #2c2200;
 }
 
 h2 {
+    font-weight: bold;
+    font-size: 30px;
     border-bottom: solid #3f9c00;
+}
+
+footer {
+    background-color: #777676;
+    color: #FFF;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.container {
+    padding: 2%;
+}
+
+.title {
+    padding: 20px;
+    background-color: #ffd000;
+}
+
+.nav {
+    padding: 10px 30px 10px 10px;
+    text-align: right;
+    background-color: #553300;
+    color: #FFFFFF;
+}
+
+.nav a{
+    padding: 0px 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.name {
+    clear: left;
+}
+
+.name_ja {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.name_en {
+    padding-left: 20px;
+    font-style: italic;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+/* レスポンシブ(スマホサイズ用CSS) */
+@media screen and (max-width: 480px) { 
+    h1 {
+        text-align: center;
+    }
+
+    .nav {
+        text-align: center;
+    }
+
+    .name_ja {
+        padding: 0px;
+    }
+
+    .name_en {
+        padding: 0px;
+    }
 }
