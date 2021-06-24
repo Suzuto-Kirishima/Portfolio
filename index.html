@@ -5,24 +5,80 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 </head>
 <body>
     <div class="title">
         <h1>My Portfolio</h1>
     </div>
     <div class="nav">
-        <a href="#">Nav1</a>
-        <a href="#">Nav2</a>
-        <a href="#">Nav3</a>
+        <a href="#skill">スキル</a>
+        <a href="#interest">興味</a>
+        <a href="#work">作品</a>
     </div>
     
     <div class="container">
-        <div class="name">
+        <div id="name">
             <h2>名前</h2>
             <p class="name_ja">桐島 涼斗</ｐ>
             <p class="name_en">Suzuto KIRISHIMA</p>
+            <p>武蔵野大学データサイエンス学部</p>
+        </div>
+
+        <div id="skill">
+            <h2>スキル</h2>
+            <table>
+                <h3>使用言語</h3>
+                <tr>
+                    <td><img src="https://icongr.am/devicon/python-original.svg?size=128&color=currentColor"></td>
+                    <td><img src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"></td>
+                    <td><img src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor"></td>
+                    <td><img src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"></td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>JavaScript</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+            </table>
+            <table>
+                <h3>SQL</h3>
+                <tr>
+                    <td><img src="https://icongr.am/devicon/postgresql-original.svg?size=128&color=currentColor"></td>
+                    <td><img src="https://icongr.am/devicon/mysql-original.svg?size=128&color=currentColor"></td>
+                </tr>
+                <tr>
+                    <td>PostgreSQL</td>
+                    <td>MySQL(習得中)</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="interest">
+            <h2>興味</h2>
+            <ul>
+                <li>Web開発</li>
+                <li>WebAPI</li>
+                <li>交通データ</li>
+            </ul>
+        </div>
+
+        <div id="work">
+            <h2>作品</h2>
+            <h3>大阪府の市町村別コロナ感染者及び感染者率の推移の可視化</h3>
+            <div class="osakacorona">
+                <p class="movie"><iframe src="https://drive.google.com/file/d/1q2W1GCUCEjspEYVxWfJakcIQG7hi2qwm/preview" allow="autoplay"></iframe></p>
+                <p class="info">大阪府における市町村別のコロナ感染者数、及び10万人あたりの感染者数(人口に対する感染者率)の推移をProcessingを用いて可視化</p>
+            </div>
         </div>
     </div>
-    <footer>©︎2021 Suzuto Kirishima</footer>
+
+    <footer>
+        <nav>
+            <a href="https://github.com/SuzutoKirishima" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+        <p>©︎2021 Suzuto Kirishima</p>
+    </footer>
 </body>
 </html>

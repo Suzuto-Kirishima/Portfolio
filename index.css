@@ -9,19 +9,44 @@ h1 {
 
 h2 {
     font-weight: bold;
-    font-size: 30px;
-    border-bottom: solid #3f9c00;
+    font-size: 2em;
+    padding: 1%;
+    background-color: #f0ffe6;
+    border-bottom: 3px #204d02 solid;
 }
 
-footer {
-    background-color: #777676;
-    color: #FFF;
-    padding: 5px 0px;
+h3 {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 5px #204d02 solid;
+}
+
+p, li {
+    font-size: 20px;
+    padding-left: 20px;
+}    
+
+table {
+    padding-left: 20px;
+}
+
+tr {
     text-align: center;
 }
 
-.container {
-    padding: 2%;
+footer {
+    float:none;
+    margin: 0;
+    padding: 5px 0;
+    background-color: #777676;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer a {
+    font-size: 20px;
+    color: #f0ffe6;
 }
 
 .title {
@@ -42,22 +67,41 @@ footer {
     text-decoration: none;
 }
 
+.container {
+    padding: 2%;
+}
+
 .name {
     clear: left;
 }
 
 .name_ja {
-    padding-left: 20px;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 0px;
 }
 
 .name_en {
-    padding-left: 20px;
     font-style: italic;
     margin-top: 0px;
     font-size: 20px;
+}
+
+#skill img {
+    width: 60%;
+}
+
+.osakacorona {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie {
+    margin-left: 20px;
+}
+
+.info {
+    width: 100%;
 }
 
 /* レスポンシブ(スマホサイズ用CSS) */
@@ -65,16 +109,62 @@ footer {
     h1 {
         text-align: center;
     }
+    
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        margin-left: 0px;;
+        font-size: 14px;
+    }
+    
+    p, li {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    table {
+        padding-left: 0px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
 
     .nav {
         text-align: center;
     }
 
     .name_ja {
-        padding: 0px;
+        font-size: 20px;
+    }
+    
+    .name_en {
+        font-size: 15px;
     }
 
-    .name_en {
-        padding: 0px;
+    #skill img {
+        width: 40%;
+    }
+
+    #skill td {
+        font-size: 14px;
+    }
+
+    .osakacorona {
+        display: inline;
+        justify-content: flex-start;
+    }
+    
+    .movie {
+        margin-left: 0px;
+        text-align: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    .info {
+        font-size: 11px;
     }
 }
