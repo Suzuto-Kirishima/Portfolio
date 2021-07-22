@@ -9,20 +9,25 @@
 </head>
 <body>
     <div class="title">
-        <h1>My Portfolio</h1>
+        <h1><a href="index.html">Kirishima's Portfolio</a></h1>
     </div>
     <div class="nav">
         <a href="#skill">スキル</a>
         <a href="#interest">興味</a>
-        <a href="#work">作品</a>
+        <a href="/mywork.html">作品</a>
     </div>
     
     <div class="container">
         <div id="name">
             <h2>名前</h2>
-            <p class="name_ja">桐島 涼斗</ｐ>
-            <p class="name_en">Suzuto KIRISHIMA</p>
-            <p>武蔵野大学データサイエンス学部</p>
+            <div id="exp">
+                <img src="./img/mypicture2.jpg">
+                <div>
+                    <p class="name_ja">桐島 涼斗</ｐ>
+                    <p class="name_en">Suzuto KIRISHIMA</p>
+                    <p>武蔵野大学データサイエンス学部</p>
+                </div>
+            </div>
         </div>
 
         <div id="skill">
@@ -31,26 +36,26 @@
                 <h3>使用言語</h3>
                 <tr>
                     <td><img src="https://icongr.am/devicon/python-original.svg?size=128&color=currentColor"></td>
-                    <td><img src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"></td>
                     <td><img src="https://icongr.am/devicon/html5-original.svg?size=128&color=currentColor"></td>
                     <td><img src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"></td>
+                    <td><img src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"></td>
                 </tr>
                 <tr>
                     <td>Python</td>
-                    <td>JavaScript</td>
                     <td>HTML</td>
                     <td>CSS</td>
+                    <td>JavaScript<br>(習得中)</td>
                 </tr>
             </table>
             <table>
                 <h3>SQL</h3>
                 <tr>
                     <td><img src="https://icongr.am/devicon/postgresql-original.svg?size=128&color=currentColor"></td>
-                    <td><img src="https://icongr.am/devicon/mysql-original.svg?size=128&color=currentColor"></td>
+                    <td><img src="./img/sqlite.svg"></td>
                 </tr>
                 <tr>
                     <td>PostgreSQL</td>
-                    <td>MySQL(習得中)</td>
+                    <td>SQLite<br>(習得中)</td>
                 </tr>
             </table>
         </div>
@@ -58,19 +63,15 @@
         <div id="interest">
             <h2>興味</h2>
             <ul>
-                <li>Web開発</li>
-                <li>WebAPI</li>
-                <li>交通データ</li>
+                <li>Webアプリケーション開発</li>
+                <li>Web API</li>
+                <!-- <li>交通データ</li> -->
             </ul>
         </div>
 
         <div id="work">
             <h2>作品</h2>
-            <h3>大阪府の市町村別コロナ感染者及び感染者率の推移の可視化</h3>
-            <div class="osakacorona">
-                <p class="movie"><iframe src="https://drive.google.com/file/d/1q2W1GCUCEjspEYVxWfJakcIQG7hi2qwm/preview" allow="autoplay"></iframe></p>
-                <p class="info">大阪府における市町村別のコロナ感染者数、及び10万人あたりの感染者数(人口に対する感染者率)の推移をProcessingを用いて可視化</p>
-            </div>
+            <p>作品一覧は<a href="/mywork.html">こちら</a></p>
         </div>
     </div>
 
