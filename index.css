@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Yu Gothic', sans-serif;
 }
 
 h1 {
@@ -46,6 +47,7 @@ table {
 
 tr {
     text-align: center;
+    height: 10px;
 }
 
 footer {
@@ -135,6 +137,7 @@ footer img {
 
 #skill img {
     width: 60%;
+    height: 60%;
 }
 
 .learn {
@@ -170,8 +173,9 @@ footer img {
 }
 
 .tag-area {
-    margin: 5px;
-    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 20px;
 }
 
 .tag-area p {
@@ -189,8 +193,12 @@ footer img {
 
 .divide {
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     margin: 10px;
+}
+
+.divide video, img {
+    height: 100%;
 }
 
 .info {
@@ -279,7 +287,7 @@ footer img {
     }
 
     ul {
-        padding-left: 0;
+        padding: 10px 0;
     }
 
     table {
@@ -308,11 +316,12 @@ footer img {
 
     .add {
         padding: 0 5px;
-        font-size: 14px;;
+        font-size: 14px;
     }
 
     #skill img {
         width: 40%;
+        height: 40%;
     }
 
     #skill td {
