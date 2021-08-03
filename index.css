@@ -29,12 +29,15 @@ p {
 
 ul {
     margin-top: 5px;
+    list-style: none;
 }
 
 li {
-    padding-left: 0px;
-    margin-left: 30px;
+    padding-left: 10px;
     font-size: 20px;
+    border-left: #204d02 2px solid;
+    border-bottom: #204d02 2px solid;
+    max-width: 500px;
 }
 
 table {
@@ -55,19 +58,36 @@ footer {
     text-align: center;
 }
 
-footer a {
-    font-size: 20px;
-    color: #f0ffe6;
+footer p {
+    margin-top: 0;
+}
+
+footer img {
+    width: 40px;
 }
 
 .title {
-    padding: 20px;
+    padding: 10px 20px;
     background-color: #c2ff7d;
 }
 
 .title a {
     text-decoration: none;
     color: #2c2200;
+}
+
+.prof {
+    font-size: 20px;
+}
+
+.t_left{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.t_right{
+    text-align: right;
+    font-weight: bold;
 }
 
 .nav {
@@ -117,6 +137,16 @@ footer a {
     width: 60%;
 }
 
+.learn {
+    text-decoration: underline;
+    color: #8a8a8a;
+}
+
+.add {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
 .work_content {
     border-bottom: 2px #aaaaaa solid;
 }
@@ -139,6 +169,24 @@ footer a {
     font-size: 16px;
 }
 
+.tag-area {
+    margin: 5px;
+    padding-left: 10px;
+}
+
+.tag-area p {
+    font-size: 14px;
+}
+
+.tag {
+    margin: 10px 2px;
+    padding: 5px 10px;
+    display: inline;
+    background-color: #133f00;
+    border-radius: 7px;
+    color: #FFFFFF;
+}
+
 .divide {
     display: flex;
     justify-content: flex-start;
@@ -157,7 +205,7 @@ footer a {
     }
 
     ul {
-        padding-left: 10px;
+        padding: 10px;
     }
 
     #exp {
@@ -168,6 +216,10 @@ footer a {
         width: 100%;
         height: 350px;
         object-fit: cover;
+    }
+
+    .add {
+        padding: 0 20px;
     }
 
     .name_ja {
@@ -206,6 +258,7 @@ footer a {
 @media screen and (max-width: 480px) { 
     h1 {
         text-align: center;
+        margin: 10px 0;
     }
     
     h2 {
@@ -217,13 +270,16 @@ footer a {
         font-size: 14px;
     }
     
+    p {
+        padding: 0;
+    }
+
     p, li {
         font-size: 14px;
-        padding: 0px;
     }
 
     ul {
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     table {
@@ -238,6 +294,10 @@ footer a {
         text-align: center;
     }
 
+    .prof {
+        font-size: 15px;
+    }
+
     .name_ja {
         font-size: 20px;
     }
@@ -246,11 +306,28 @@ footer a {
         font-size: 15px;
     }
 
+    .add {
+        padding: 0 5px;
+        font-size: 14px;;
+    }
+
     #skill img {
         width: 40%;
     }
 
     #skill td {
         font-size: 14px;
+    }
+
+    .tag-area {
+        margin: 0;
+    }
+
+    .tag-area p {
+        font-size: 10px;
+    }
+
+    .tag {
+        margin: 10px 0;
     }
 }
