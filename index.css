@@ -142,8 +142,10 @@ footer img {
 }
 
 #skill img {
+    padding: 0;
     width: 60%;
     height: 60%;
+    vertical-align: bottom;
 }
 
 .learn {
