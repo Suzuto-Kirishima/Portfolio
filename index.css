@@ -1,3 +1,4 @@
+/* タブレットサイズ用CSS */
 body {
     margin: 0px;
     /* font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Yu Gothic', sans-serif; */
@@ -21,6 +22,7 @@ h3 {
     margin-left: 20px;
     margin-bottom: 0;
     padding-left: 10px;
+    font-size: 1.3em;
     border-left: 5px #204d02 solid;
 }
 
@@ -31,6 +33,7 @@ p {
 
 ul {
     margin-top: 5px;
+    padding-left: 25px;
     list-style: none;
 }
 
@@ -53,16 +56,18 @@ tr {
 
 footer {
     float: none;
-    margin: 0px;
-    padding: 5px 0;
+    margin: 0;
+    padding: 0;
     background-color: #777676;
     color: #fff;
-    font-size: 14px;
     text-align: center;
 }
 
 footer p {
-    margin-top: 0;
+    margin: 0;
+    padding: 10px;
+    padding-top: 0;
+    font-size: 16px;
 }
 
 footer img {
@@ -100,7 +105,7 @@ footer img {
     color: #FFFFFF;
 }
 
-.nav a{
+.nav a {
     padding: 0px 10px;
     color: #FFFFFF;
     text-decoration: none;
@@ -163,47 +168,64 @@ footer img {
     color: #000000;
 }
 
-.work_content img, video {
-    margin-left: 30px;
-    border: 1px #474747 solid;
-    width: 30%;
+.work_content a:hover {
+    color: #4fac28;
 }
 
 .work_content p {
     font-size: 16px;
 }
 
+.work_content table {
+    padding: 0;
+    margin: 10px 30px;
+}
+
+.work_content img, video {
+    width: 100%;
+    border: 1px #204d02 solid;
+}
+
+.work_content iframe {
+    width: 100%;
+    height: 25vw;
+}
+
 .tag-area {
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 10px;
+    margin-bottom: 0;
     padding-left: 20px;
 }
 
 .tag-area p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .tag {
-    margin: 10px 2px;
+    margin: 0 2px;
     padding: 5px 10px;
-    display: inline;
+    font-size: 10px;
+    display: inline-block;
     background-color: #133f00;
     border-radius: 7px;
     color: #FFFFFF;
 }
 
-.divide {
-    display: flex;
-    justify-content: start;
-    margin: 10px;
+.left {
+    width: 40%;
 }
 
-.divide video, img {
-    height: 100%;
+.right {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
 }
 
-.info {
-    width: 70%;
+.icon {
+    padding: 10px;
+    padding-bottom: 0;
 }
 
 
@@ -235,30 +257,43 @@ footer img {
         margin-top: 10px;
     }
 
-    .divide {
-        display: block;
-        justify-content: start;
-    }
-
-    .work_content img, video {
-        display: block;
-        margin: 0;
-        width: 100%;
-        object-fit: cover;
-    }
-
     .work_content a {
         text-decoration: none;
     }
-
-    .info {
+    
+    .work_content table {
         margin: 0;
-        padding: 10px 0;
-        width: 100%;
+    }
+    
+    .work_content td {
+        margin: 0;
+        display: inline-block;
+        width: 100%
     }
 
-    footer a {
-        text-decoration: none;
+    .work_content img, video {
+        width: 100%;
+        height: auto;
+    }
+
+    .work_content iframe {
+        width: 100%;
+        height: 65vw;
+    }
+    
+    .tag-area {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .tag {
+        margin: 3px ;
+    }
+    
+    .right {
+        margin: 0;
+        padding: 10px 0;
     }
 }
 
@@ -281,9 +316,11 @@ footer img {
     
     p {
         padding: 0;
+        font-size: 14px;
     }
 
-    p, li {
+    li {
+        padding-left: 5px;
         font-size: 14px;
     }
 
@@ -293,10 +330,6 @@ footer img {
 
     table {
         padding-left: 0px;
-    }
-
-    footer a {
-        font-size: 14px;
     }
 
     .nav {
@@ -333,17 +366,17 @@ footer img {
         margin: 0;
         padding-left: 10px;
     }
-
+    
     .tag-area p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .tag {
-        margin: 10px 0;
+        margin: 1px 0;
         padding: 3px 10px;
     }
 
-    .divide p {
-        font-size: 14px;
+    .work_content td {
+        font-size: 12px;
     }
 }
