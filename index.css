@@ -220,6 +220,7 @@ footer img {
 
 .tag-area p {
     font-size: 12px;
+    /* font-weight: bold; */
 }
 
 .tag {
@@ -237,7 +238,7 @@ footer img {
 }
 
 .hc {
-    background-color: #e2643a;
+    background-color: #e45d30;
 }
 
 .js {
