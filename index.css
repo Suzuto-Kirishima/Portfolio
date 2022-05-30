@@ -3,6 +3,7 @@ body {
     margin: 0px;
     /* font-family: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Yu Gothic', sans-serif; */
     font-family: sans-serif;
+    background-color: #fbfaf6;
 }
 
 h1 {
@@ -12,10 +13,16 @@ h1 {
 
 h2 {
     font-weight: bold;
+    font-family: serif;
     font-size: 2em;
-    padding: 1%;
-    background-color: #f0ffe6;
+    padding: 10px;
+    /* background-color: #f0ffe6; */
+    background-color: #fffeea;
+    color: #0d2800;
+    border-left: 10px #204d02 solid;
+    border-top: 3px #204d02 solid;
     border-bottom: 3px #204d02 solid;
+    border-radius: 5px 0px 0px 5px;
 }
 
 h3 {
@@ -40,7 +47,6 @@ ul {
 li {
     padding-left: 10px;
     font-size: 20px;
-    border-left: #204d02 2px solid;
     border-bottom: #204d02 2px solid;
     max-width: 500px;
 }
@@ -54,12 +60,16 @@ tr {
     height: 10px;
 }
 
+td {
+    vertical-align: middle;
+}
+
 footer {
     float: none;
     margin: 0;
     padding: 0;
     background-color: #777676;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -76,12 +86,13 @@ footer img {
 
 .title {
     padding: 10px 20px;
-    background-color: #c2ff7d;
+    background-color: #65a525;
 }
 
 .title a {
     text-decoration: none;
-    color: #2c2200;
+    color: #ffffff;
+    font-family: serif;
 }
 
 .prof {
@@ -99,16 +110,19 @@ footer img {
 }
 
 .nav {
-    padding: 10px 30px 10px 10px;
+    padding: 7px 30px 7px 10px;
+    border-top: #675000 5px solid;
     text-align: right;
-    background-color: #00550e;
-    color: #FFFFFF;
+    background-color: #eeecbb;
+    font-family: serif;
+    font-weight: bolder;
 }
 
 .nav a {
     padding: 0px 10px;
-    color: #FFFFFF;
+    color: #372c00;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .container {
@@ -127,6 +141,8 @@ footer img {
 #exp img {
     width: 20%;
     height: 20%;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
 }
 
 .name_ja {
@@ -141,10 +157,13 @@ footer img {
     font-size: 20px;
 }
 
+#skill td {
+    padding: 0px 20px;
+}
+
 #skill img {
-    padding: 0;
-    width: 60%;
-    height: 60%;
+    width: 5em;
+    height: 5em;
     vertical-align: bottom;
 }
 
@@ -208,9 +227,22 @@ footer img {
     padding: 5px 10px;
     font-size: 10px;
     display: inline-block;
-    background-color: #133f00;
+    background-color: #5a5a5a;
     border-radius: 7px;
-    color: #FFFFFF;
+    color: #ffffff;
+}
+
+.py {
+    background-color: #3576a3;
+}
+
+.hc {
+    background-color: #e2643a;
+}
+
+.js {
+    background-color: #ffdd33;
+    color: #323232;
 }
 
 .left {
@@ -219,15 +251,21 @@ footer img {
 
 .right {
     width: 60%;
-    padding: 10px;
+    padding: 20px;
     font-size: 16px;
     text-align: left;
-    vertical-align: top;
+    line-height: 2em;
 }
 
 .icon {
     padding: 10px;
     padding-bottom: 0;
+}
+
+.sub_exp {
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 
@@ -241,14 +279,23 @@ footer img {
         padding: 10px;
     }
 
+    #skill img {
+        width: 4em;
+        height: 4em;
+        padding: 5px;
+    }
+
     #exp {
         display: block;
     }
     
     #exp img {
-        width: 100%;
-        height: 350px;
+        display: block;
+        width: 80%;
+        height: 300px;
+        margin: auto;
         object-fit: cover;
+        border-radius: 30px;
     }
 
     .add {
@@ -304,10 +351,15 @@ footer img {
 @media screen and (max-width: 480px) { 
     h1 {
         text-align: center;
+        line-height: 1.3em;
         margin: 10px 0;
     }
     
     h2 {
+        padding: 5px 10px;
+        border-left: 5px #204d02 solid;
+        border-top: 2px #204d02 solid;
+        border-bottom: 2px #204d02 solid;
         font-size: 20px;
     }
 
@@ -332,14 +384,30 @@ footer img {
 
     table {
         padding-left: 0px;
+        width: 100%;
+    }
+
+    .title {
+        padding: 5px 20px;
     }
 
     .nav {
         text-align: center;
     }
 
+    .nav a {
+        font-size: 16px;
+    }
+
     .prof {
         font-size: 15px;
+    }
+
+    #exp img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
     }
 
     .name_ja {
@@ -355,13 +423,18 @@ footer img {
         font-size: 14px;
     }
 
-    #skill img {
-        width: 40%;
-        height: 40%;
+    #skill table {
+        table-layout: fixed;
     }
 
     #skill td {
+        padding: 0px;
         font-size: 14px;
+    }
+
+    #skill img {
+        width: 4em;
+        height: 4em;
     }
 
     .tag-area {
@@ -379,6 +452,14 @@ footer img {
     }
 
     .work_content td {
+        font-size: 12px;
+    }
+
+    .right {
+        line-height: 1.6em;
+    }
+
+    .sub_exp {
         font-size: 12px;
     }
 }
