@@ -163,7 +163,6 @@ footer img {
 
 #skill img {
     width: 5em;
-    height: 5em;
     vertical-align: bottom;
 }
 
@@ -265,6 +264,13 @@ footer img {
 .icon {
     padding: 10px;
     padding-bottom: 0;
+}
+
+.sub_title {
+    margin-top: 0px;
+    padding-left: 0.5rem;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .sub_exp {
@@ -462,6 +468,11 @@ footer img {
 
     .right {
         line-height: 1.6em;
+    }
+
+    .sub_title {
+        padding-left: 0;
+        font-size: 10px;
     }
 
     .sub_exp {
