@@ -238,6 +238,16 @@ footer img {
     border: 1px #204d02 solid;
 }
 
+.img_click img {
+    width: 100%;
+    border: 4px #4fac28 outset;
+}
+
+.img_click:hover img {
+    width: 100%;
+    border: 4px #4fac28 inset;
+}
+
 .work_content iframe {
     width: 100%;
     height: 25vw;
@@ -286,6 +296,7 @@ footer img {
 }
 
 .left {
+    text-align: center;
     width: 40%;
 }
 
@@ -515,6 +526,10 @@ footer img {
     .tag {
         margin: 1px 0;
         padding: 3px 10px;
+    }
+
+    .work_content a {
+        text-decoration: underline;
     }
 
     .work_content td {
