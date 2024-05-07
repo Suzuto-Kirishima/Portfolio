@@ -240,12 +240,12 @@ footer img {
 
 .img_click img {
     width: 100%;
-    border: 4px #4fac28 outset;
+    border: 3px #4fac28 outset;
 }
 
 .img_click:hover img {
     width: 100%;
-    border: 4px #4fac28 inset;
+    border: 3px #4fac28 inset;
 }
 
 .work_content iframe {
